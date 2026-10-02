@@ -1,0 +1,22 @@
+/* páginas de texto (políticas e 404): mesma identidade do site, sem efeitos */
+:root{color-scheme:dark;--bg:#050B06;--surface:#0B150C;--ink:#E9F6E6;--muted:#8FA68C;--line:#1A301B;--accent:#75FB61;
+  --display:"Sora",system-ui,sans-serif;--body:"Manrope",system-ui,sans-serif;--mono:"JetBrains Mono",ui-monospace,Menlo,monospace}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 var(--body);padding-inline:16px;padding-block:20px 56px}
+.wrap{max-width:720px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 18px 10px 14px;border:1px solid var(--line);border-radius:999px;background:var(--surface)}
+.brand{display:flex;align-items:center;gap:8px;font:700 20px/1 var(--display);letter-spacing:-.04em;text-decoration:none;color:var(--ink)}
+.brand svg{width:26px;height:26px}
+header a.back{font-size:14px;color:var(--muted);text-decoration:none}
+header a.back:hover,a:hover{color:var(--accent)}
+.eyebrow{font:500 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+h1{font:700 clamp(30px,6vw,46px)/1.05 var(--display);letter-spacing:-.04em;margin:8px 0 0;text-wrap:balance}
+h2{font:600 20px/1.3 var(--display);letter-spacing:-.02em;margin:18px 0 0}
+p,li{color:#C4D6C1;margin:0}
+main{display:flex;flex-direction:column;gap:12px}
+ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+a{color:var(--accent)}
+.when{color:var(--muted);font-size:14px}
+footer{border-top:1px solid var(--line);padding-top:18px;display:flex;flex-wrap:wrap;gap:6px 18px;color:var(--muted);font-size:13px}
+footer a{color:var(--muted)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
